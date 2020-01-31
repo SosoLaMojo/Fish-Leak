@@ -1,11 +1,8 @@
-﻿using System;
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
-using Random = UnityEngine.Random;
 
-public class RandomPatrol : MonoBehaviour
+public class RandomPatrolPlayer : MonoBehaviour
 {
     [SerializeField] private float minX;
     [SerializeField] private float maxX;
@@ -39,13 +36,5 @@ public class RandomPatrol : MonoBehaviour
         float randomY = Random.Range(minY, maxY);
         
         return new Vector2(randomX, randomY);
-    }
-
-    private void OnTriggerEnter2D(Collider2D other)
-    {
-        if (other.CompareTag("Player"))
-        {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-        }
     }
 }

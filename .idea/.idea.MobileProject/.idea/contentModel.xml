@@ -7,7 +7,9 @@
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
         <e p="Scripts" t="Include">
+          <e p="DragAndDrop.cs" t="Include" />
           <e p="RandomPatrol.cs" t="Include" />
+          <e p="RandomPatrolPlayer.cs" t="Include" />
         </e>
       </e>
       <e p="MobileProject.sln" t="IncludeFlat" />
