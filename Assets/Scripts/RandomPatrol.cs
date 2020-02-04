@@ -7,8 +7,6 @@ using Random = UnityEngine.Random;
 
 public class RandomPatrol : MonoBehaviour
 {
-    private Rigidbody2D body;
-    
     [SerializeField] private float minX;
     [SerializeField] private float maxX;
     [SerializeField] private float minY;
@@ -16,13 +14,13 @@ public class RandomPatrol : MonoBehaviour
     [SerializeField] private float speed;
 
     private Vector2 targetPosition;
+
+    private bool isFacingRight = true;
     
     
     void Start()
     {
         targetPosition = GetRandomPosition();
-
-        body = GetComponent<Rigidbody2D>();
     }
     
     void Update()
@@ -36,13 +34,26 @@ public class RandomPatrol : MonoBehaviour
             targetPosition = GetRandomPosition();
         }
         
-        Flip();
+        
     }
 
     Vector2 GetRandomPosition()
     {
         float randomX = Random.Range(minX, maxX);
         float randomY = Random.Range(minY, maxY);
+
+        if (randomX < transform.position.x && isFacingRight)
+        {
+            transform.Rotate(0f, 180f, 0f);
+
+            isFacingRight = false;
+        }
+        else if (randomX > transform.position.x && !isFacingRight)
+        {
+            transform.Rotate(0f, 180f, 0f);
+
+            isFacingRight = true;
+        }
         
         return new Vector2(randomX, randomY);
     }
@@ -54,16 +65,5 @@ public class RandomPatrol : MonoBehaviour
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
     }
-
-    private void Flip()
-    {
-        if (body.velocity.x > 0f)
-        {
-            transform.Rotate(0f, 180.0f, 0f);
-        }
-        else if (body.velocity.x < 0f)
-        {
-            transform.Rotate(0f, 180.0f, 0f);
-        }
-    }
+    
 }

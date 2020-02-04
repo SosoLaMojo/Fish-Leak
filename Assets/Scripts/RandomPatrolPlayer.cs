@@ -11,6 +11,8 @@ public class RandomPatrolPlayer : MonoBehaviour
     [SerializeField] private float speed;
 
     private Vector2 targetPosition;
+
+    private bool isFacingRight = true;
     
     
     void Start()
@@ -34,6 +36,19 @@ public class RandomPatrolPlayer : MonoBehaviour
     {
         float randomX = Random.Range(minX, maxX);
         float randomY = Random.Range(minY, maxY);
+        
+        if (randomX < transform.position.x && isFacingRight)
+        {
+            transform.Rotate(0f, 180f, 0f);
+
+            isFacingRight = false;
+        }
+        else if (randomX > transform.position.x && !isFacingRight)
+        {
+            transform.Rotate(0f, 180f, 0f);
+
+            isFacingRight = true;
+        }
         
         return new Vector2(randomX, randomY);
     }
