@@ -17,7 +17,12 @@ public class RandomPatrol : MonoBehaviour
 
     private bool isFacingRight = true;
     
-    
+    const float oneSecond = 1.0f;
+    float timer = 0f;
+    [SerializeField] float speedIncreasement;
+    const float restartTimer = 0;
+    [SerializeField] float timeBeforeIncreasement;
+
     void Start()
     {
         targetPosition = GetRandomPosition();
@@ -34,7 +39,7 @@ public class RandomPatrol : MonoBehaviour
             targetPosition = GetRandomPosition();
         }
         
-        
+        IncreaseFishSpeed();
     }
 
     Vector2 GetRandomPosition()
@@ -66,4 +71,14 @@ public class RandomPatrol : MonoBehaviour
         }
     }
     
+    void IncreaseFishSpeed()
+    {
+        timer += oneSecond * Time.deltaTime;
+        
+        if (timer >= timeBeforeIncreasement)
+        {
+            speed += speedIncreasement;
+            timer = restartTimer;
+        }
+    }
 }

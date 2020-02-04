@@ -14,7 +14,6 @@ public class RandomPatrolPlayer : MonoBehaviour
 
     private bool isFacingRight = true;
     
-    
     void Start()
     {
         targetPosition = GetRandomPosition();
