@@ -8,6 +8,7 @@
       <e p="Assets" t="Include">
         <e p="Scripts" t="Include">
           <e p="DragAndDrop.cs" t="Include" />
+          <e p="MenuManager.cs" t="Include" />
           <e p="RandomPatrol.cs" t="Include" />
           <e p="RandomPatrolPlayer.cs" t="Include" />
           <e p="ScoreIncreasedPerSecond.cs" t="Include" />
