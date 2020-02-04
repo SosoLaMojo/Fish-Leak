@@ -22,6 +22,8 @@ public class RandomPatrol : MonoBehaviour
     [SerializeField] float speedIncreasement;
     const float restartTimer = 0;
     [SerializeField] float timeBeforeIncreasement;
+    
+    [SerializeField] GameObject panel;
 
     void Start()
     {
@@ -67,7 +69,8 @@ public class RandomPatrol : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+            Time.timeScale = 0;
+            panel.SetActive(true);
         }
     }
     
