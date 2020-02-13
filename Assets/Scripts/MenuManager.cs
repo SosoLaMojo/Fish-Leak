@@ -22,5 +22,11 @@ public class MenuManager : MonoBehaviour
         SceneManager.LoadScene("SampleScene");
         Time.timeScale = 1;
     }
-    
+
+    public void LoadLevel2()
+    {
+        SceneManager.LoadScene("SceneSolange");
+        Time.timeScale = 1;
+    }
+
 }

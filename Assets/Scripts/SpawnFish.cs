@@ -7,13 +7,10 @@ public class SpawnFish : MonoBehaviour
     [SerializeField] private GameObject[] fish;
     [SerializeField] float pointIncreasePerSecond;
     [SerializeField] float pointIncreasement;
-    [SerializeField] float timeBeforeIncreasement;
+    [SerializeField] float timeBeforeInstantiate = 30;
 
-    float floatScoreAmount = 0;
     float timer = 0;
-    const float thirdSeconds = 30.0f;
     const float restartTimer = 0;
-    int scoreAmount = 0;
 
     private void Update()
     {
@@ -29,7 +26,7 @@ public class SpawnFish : MonoBehaviour
     void TimerSpawnFish()
     {
         timer += Time.deltaTime;
-        if (timer >= timeBeforeIncreasement)
+        if (timer >= timeBeforeInstantiate)
         {
             pointIncreasePerSecond += pointIncreasement;
             SpawnRandom();

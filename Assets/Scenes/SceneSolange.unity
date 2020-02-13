@@ -3264,6 +3264,57 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!1 &984013906
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 984013908}
+  - component: {fileID: 984013907}
+  m_Layer: 0
+  m_Name: SpawnFishRight
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &984013907
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 984013906}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd3d5b654155da848becfc79fa13aab2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fish:
+  - {fileID: 665425778197557959, guid: 38b3566aa6455294baf96acab8afe8be, type: 3}
+  - {fileID: 665425778197557959, guid: a5844bc78afe903419ef9de931646b64, type: 3}
+  - {fileID: 665425778197557959, guid: 08db9d2259985af489516fd6224319bf, type: 3}
+  - {fileID: 665425778197557959, guid: e5addb37b06b4da48b35f964d385f77d, type: 3}
+  pointIncreasePerSecond: 0
+  pointIncreasement: 0
+  timeBeforeInstantiate: 31
+--- !u!4 &984013908
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 984013906}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 11.41, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 11
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1011326245 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 665425778197557959, guid: 65eef4a5e3089124c9648c76906d13c5,
@@ -4458,7 +4509,7 @@ GameObject:
   - component: {fileID: 1488830886}
   - component: {fileID: 1488830885}
   m_Layer: 0
-  m_Name: SpawnFish
+  m_Name: SpawnFishLeft
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4483,7 +4534,7 @@ MonoBehaviour:
   - {fileID: 665425778197557959, guid: e5addb37b06b4da48b35f964d385f77d, type: 3}
   pointIncreasePerSecond: 0
   pointIncreasement: 0
-  timeBeforeIncreasement: 30
+  timeBeforeInstantiate: 19
 --- !u!4 &1488830886
 Transform:
   m_ObjectHideFlags: 0
