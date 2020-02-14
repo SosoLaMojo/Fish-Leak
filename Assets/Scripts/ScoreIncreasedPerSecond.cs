@@ -20,6 +20,11 @@ public class ScoreIncreasedPerSecond : MonoBehaviour
     [SerializeField] int maxScoreLevel1 = 100;
     [SerializeField] GameObject panelLvlUp;
 
+
+    private void Start()
+    {
+        Time.timeScale = 1;
+    }
     void Update()
     { 
         IncreaseScore();
@@ -49,6 +54,7 @@ public class ScoreIncreasedPerSecond : MonoBehaviour
     {
         if(scoreAmount >= maxScoreLevel1)
         {
+            Time.timeScale = 0;
             panelLvlUp.SetActive(true);
         }
     }
