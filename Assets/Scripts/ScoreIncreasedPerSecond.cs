@@ -17,10 +17,14 @@ public class ScoreIncreasedPerSecond : MonoBehaviour
     const float restartTimer = 0;
     [SerializeField] float timeBeforeIncreasement;
 
+    [SerializeField] int maxScoreLevel1 = 100;
+    [SerializeField] GameObject panelLvlUp;
+
     void Update()
     { 
         IncreaseScore();
         IncreasePointsPerSecond();
+        PanelNextLevel();
     }
 
     void IncreaseScore()
@@ -38,6 +42,14 @@ public class ScoreIncreasedPerSecond : MonoBehaviour
         {
             pointIncreasePerSecond += pointIncreasement;
             timer = restartTimer;
+        }
+    }
+
+    void PanelNextLevel()
+    {
+        if(scoreAmount >= maxScoreLevel1)
+        {
+            panelLvlUp.SetActive(true);
         }
     }
 }
