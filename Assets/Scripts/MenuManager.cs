@@ -28,5 +28,9 @@ public class MenuManager : MonoBehaviour
         SceneManager.LoadScene("SceneSolange");
         Time.timeScale = 1;
     }
-
+    public void LoadScene(string sceneName)
+    {
+        SceneManager.LoadScene(sceneName);
+        Time.timeScale = 1;
+    }
 }
