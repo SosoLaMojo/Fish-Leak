@@ -115,5 +115,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43e175b46404b384b8cb2d7432de4140, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  repulsif: {fileID: 11400000, guid: ed092b57dfc07b44c98ac786260fd412, type: 2}
+  repulsif: {fileID: 6421482371157325124, guid: f66e7144d8d012d4db430918dab18be2,
+    type: 3}
   repulsifSpawn: {fileID: 9147351022181885333}

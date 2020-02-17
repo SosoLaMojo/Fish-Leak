@@ -21,7 +21,7 @@ public class RandomPatrolPlayer : MonoBehaviour
     
     void Update()
     {
-        if ((Vector2) transform.position != targetPosition)
+        if (Vector2.Distance(targetPosition, transform.position) > 0.1f)
         {
             transform.position = Vector2.MoveTowards(transform.position, targetPosition, speed * Time.deltaTime);
         }

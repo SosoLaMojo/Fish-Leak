@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class GrowingRepulsif : MonoBehaviour
 {
-    Vector3 growingScale = new Vector3(3.0f, 3.0f, 3.0f);
+    Vector3 growingScale = new Vector3(6.0f, 6.0f, 6.0f);
     float grownTimer;
     [SerializeField] float speedTime;
 
@@ -17,11 +17,10 @@ public class GrowingRepulsif : MonoBehaviour
     void Update()
     {
         transform.localScale = Vector3.Lerp(transform.localScale, growingScale, Time.deltaTime*speedTime);
-        if (transform.localScale.x >= 2.9)
+        if (transform.localScale.x >= 5.9)
         {
             grownTimer -= Time.deltaTime;
             Destroy(gameObject);
         }
-
     }
 }

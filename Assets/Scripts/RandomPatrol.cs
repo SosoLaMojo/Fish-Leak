@@ -28,11 +28,12 @@ public class RandomPatrol : MonoBehaviour
     void Start()
     {
         targetPosition = GetRandomPosition();
+        Debug.Log(targetPosition);
     }
     
     void Update()
     {
-        if ((Vector2) transform.position != targetPosition)
+        if (Vector2.Distance(targetPosition, transform.position) > 0.1f)
         {
             transform.position = Vector2.MoveTowards(transform.position, targetPosition, speed * Time.deltaTime);
         }
@@ -82,6 +83,17 @@ public class RandomPatrol : MonoBehaviour
         {
             speed += speedIncreasement;
             timer = restartTimer;
+        }
+    }
+    void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.layer == 8)
+        {
+            Debug.Log(targetPosition);
+            Debug.Log(collision.transform.position);
+            Vector3 vec = (collision.transform.position - transform.position);
+            targetPosition = transform.position - vec;
+            Debug.Log(targetPosition);
         }
     }
 }
