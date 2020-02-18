@@ -28,7 +28,6 @@ public class RandomPatrol : MonoBehaviour
     void Start()
     {
         targetPosition = GetRandomPosition();
-        Debug.Log(targetPosition);
     }
     
     void Update()
@@ -89,11 +88,9 @@ public class RandomPatrol : MonoBehaviour
     {
         if (collision.gameObject.layer == 8)
         {
-            Debug.Log(targetPosition);
-            Debug.Log(collision.transform.position);
+
             Vector3 vec = (collision.transform.position - transform.position);
             targetPosition = transform.position - vec;
-            Debug.Log(targetPosition);
         }
     }
 }

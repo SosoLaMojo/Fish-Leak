@@ -4,24 +4,32 @@ using UnityEngine;
 
 public class SpawnRepulsif : MonoBehaviour
 {
-    //[SerializeField] SO_Repulsif repulsif;
     [SerializeField] GameObject repulsif;
     [SerializeField] Transform repulsifSpawn;
-    float currentDelay = 0.0f;
-    float delayWaveSpawn = 0.1f;
+    bool spawned;
+    [SerializeField] int actualCooldown;
+    int baseCooldown = 20;
+    int secondPerFish = 2;
+    [SerializeField] int fish = 4;
 
-
-    void Start()
+void Update()
     {
-        
     }
 
-    void Update()
-    {
-
-    }
     public void spawnRepulsif(Transform repulsifSpawn)
     {
-        Instantiate(repulsif, transform.position, Quaternion.identity);
+        if (!spawned)
+        {
+            Instantiate(repulsif, transform.position, Quaternion.identity);
+            StartCoroutine(cooldown());
+        }
+    }
+    public IEnumerator cooldown()
+    {
+        actualCooldown = baseCooldown - secondPerFish * fish;
+        spawned = true;
+        yield return new WaitForSeconds(actualCooldown);
+        spawned = false;
+        Debug.Log("finish");
     }
 }
