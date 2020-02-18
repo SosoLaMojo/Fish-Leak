@@ -10,11 +10,7 @@ public class SpawnRepulsif : MonoBehaviour
     [SerializeField] int actualCooldown;
     int baseCooldown = 20;
     int secondPerFish = 2;
-    [SerializeField] int fish = 4;
-
-void Update()
-    {
-    }
+    [SerializeField] int fish;
 
     public void spawnRepulsif(Transform repulsifSpawn)
     {
@@ -26,10 +22,15 @@ void Update()
     }
     public IEnumerator cooldown()
     {
+       
+
         actualCooldown = baseCooldown - secondPerFish * fish;
         spawned = true;
         yield return new WaitForSeconds(actualCooldown);
         spawned = false;
-        Debug.Log("finish");
+    }
+    public void addFish()
+    {
+        fish += 1;
     }
 }

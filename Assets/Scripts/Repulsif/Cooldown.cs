@@ -9,7 +9,7 @@ public class Cooldown : MonoBehaviour
     bool isCooldown;
     int baseCooldown = 20;
     int secondPerFish = 2;
-    [SerializeField] int fish = 4;
+    [SerializeField] int fish;
 
     void Update()
     {
@@ -21,16 +21,18 @@ public class Cooldown : MonoBehaviour
         {
             CoolDown.fillAmount = 0;
             isCooldown = false;
-        }    
+        }
     }
     public void cooldownRepulsif()
     {
-        Debug.Log("cooldown");
         if (!isCooldown)
         {
             actualCooldown = baseCooldown - secondPerFish * fish;
             isCooldown = true;
-            Debug.Log("!cooldown");
         }
+    }
+    public void addFish()
+    {
+        fish += 1;
     }
 }

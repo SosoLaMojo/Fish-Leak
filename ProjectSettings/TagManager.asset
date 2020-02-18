@@ -5,6 +5,8 @@ TagManager:
   serializedVersion: 2
   tags:
   - Repulsif
+  - Fish
+  - IgniorRepulsif
   layers:
   - Default
   - TransparentFX
