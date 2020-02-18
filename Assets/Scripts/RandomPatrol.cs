@@ -28,8 +28,16 @@ public class RandomPatrol : MonoBehaviour
     void Start()
     {
         targetPosition = GetRandomPosition();
-        FindObjectOfType<SpawnRepulsif>().addFish();
-        FindObjectOfType<Cooldown>().addFish();
+        //FindObjectOfType<SpawnRepulsif>().addFish();
+        if (FindObjectOfType<SpawnRepulsif>() != null)
+        {
+            FindObjectOfType<SpawnRepulsif>().addFish();
+        }
+        //FindObjectOfType<Cooldown>();
+        if (FindObjectOfType<Cooldown>() != null)
+        {
+            FindObjectOfType<Cooldown>().addFish();
+        }
     }
     
     void Update()
