@@ -1381,8 +1381,8 @@ MonoBehaviour:
   pointIncreasePerSecond: 1
   pointIncreasement: 0.2
   timeBeforeIncreasement: 10
-  maxScoreLevel1: 100
-  panelLvlUp: {fileID: 0}
+  maxScoreLevel1: 90
+  panelLvlUp: {fileID: 352384550}
 --- !u!1 &585230226
 GameObject:
   m_ObjectHideFlags: 0
