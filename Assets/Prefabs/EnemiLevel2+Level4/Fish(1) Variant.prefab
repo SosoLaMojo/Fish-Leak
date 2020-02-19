@@ -126,6 +126,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 665425778197557959, guid: 65eef4a5e3089124c9648c76906d13c5,
         type: 3}
+<<<<<<< HEAD
       propertyPath: m_TagString
       value: Fish
       objectReference: {fileID: 0}
@@ -133,6 +134,15 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Layer
       value: 10
+=======
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 665425778197557959, guid: 65eef4a5e3089124c9648c76906d13c5,
+        type: 3}
+      propertyPath: m_TagString
+      value: Fish
+>>>>>>> master
       objectReference: {fileID: 0}
     - target: {fileID: 665425778197557962, guid: 65eef4a5e3089124c9648c76906d13c5,
         type: 3}
