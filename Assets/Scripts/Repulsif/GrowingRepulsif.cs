@@ -8,9 +8,12 @@ public class GrowingRepulsif : MonoBehaviour
     float grownTimer;
     [SerializeField] float speedTime;
 
+    private AudioSource audioSource;
+
     void Start()
     {
-        
+        audioSource = GetComponent<AudioSource>();
+        audioSource.Play(); 
     }
 
     // Update is called once per frame
