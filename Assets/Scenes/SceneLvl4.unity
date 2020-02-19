@@ -790,7 +790,7 @@ MonoBehaviour:
   pointIncreasePerSecond: 1
   pointIncreasement: 0.2
   timeBeforeIncreasement: 10
-  maxScoreLevel1: 90
+  maxScoreLevel1: 60
   panelLvlUp: {fileID: 1274379739}
 --- !u!1 &585230226
 GameObject:
@@ -3966,7 +3966,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1427580422}
         m_MethodName: BackToMainMenu
         m_Mode: 1
         m_Arguments:
