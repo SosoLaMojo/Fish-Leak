@@ -1366,7 +1366,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: "Well done!! \nYou go to the last level\nThe speed of the fish increases,
-    other fish arrive, you have the repellant and the eels will also be there\n"
+    other fish arrive, you have the repellant and the eels will also be there.\nHold
+    90sec for this last level.\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 1a342e976dfc76f4c9310859768a5afc, type: 2}
   m_sharedMaterial: {fileID: 4211956691148286360, guid: 1a342e976dfc76f4c9310859768a5afc,
@@ -5562,6 +5563,7 @@ MonoBehaviour:
   - {fileID: 7209520687425289545, guid: 3c2268661e0dfda4abaffa086fc04753, type: 3}
   - {fileID: 4572921117338532341, guid: d99151f0c1f59c54995be7ffa6b6c57d, type: 3}
   - {fileID: 2593175334455996421, guid: c5830683a762f414292455f470b49464, type: 3}
+  - {fileID: 2593175334455996421, guid: c5830683a762f414292455f470b49464, type: 3}
   pointIncreasePerSecond: 0
   pointIncreasement: 0
   timeBeforeInstantiate: 19
@@ -6111,6 +6113,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2425402478525520596, guid: f12bdcac6249fe741947ab6d468704e8,
+        type: 3}
+      propertyPath: m_BodyType
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2425402478525520600, guid: f12bdcac6249fe741947ab6d468704e8,
         type: 3}
       propertyPath: m_Name
@@ -6255,6 +6262,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4572921117338532345, guid: d99151f0c1f59c54995be7ffa6b6c57d,
+        type: 3}
+      propertyPath: m_BodyType
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d99151f0c1f59c54995be7ffa6b6c57d, type: 3}
 --- !u!1001 &5835305830286666501
@@ -6377,6 +6389,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 6825174070852489680, guid: 145141f4c95e2c24d88946f6c022ea81,
+        type: 3}
+      propertyPath: m_BodyType
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6825174070852489692, guid: 145141f4c95e2c24d88946f6c022ea81,
         type: 3}
       propertyPath: m_Name
@@ -6451,6 +6468,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 7209520687425289541, guid: 3c2268661e0dfda4abaffa086fc04753,
+        type: 3}
+      propertyPath: m_BodyType
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7209520687425289544, guid: 3c2268661e0dfda4abaffa086fc04753,
         type: 3}
       propertyPath: panel

@@ -92,5 +92,10 @@ PrefabInstance:
       propertyPath: m_Size.y
       value: 0.6070318
       objectReference: {fileID: 0}
+    - target: {fileID: 665425778197557963, guid: 65eef4a5e3089124c9648c76906d13c5,
+        type: 3}
+      propertyPath: m_BodyType
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 65eef4a5e3089124c9648c76906d13c5, type: 3}

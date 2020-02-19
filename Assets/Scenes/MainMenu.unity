@@ -3878,7 +3878,7 @@ MonoBehaviour:
   m_text: 'Your goal is to protect the red fish from the other fishes by dragging
     them away from him.
 
-    Hold 100 seconds to go to Level2, but be careful, the other fishes will get faster
+    Hold 60 seconds to go to Level2, but be careful, the other fishes will get faster
     over time!
 
 
@@ -3952,7 +3952,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 1795667258}
-    characterCount: 197
+    characterCount: 196
     spriteCount: 0
     spaceCount: 38
     wordCount: 38
