@@ -22,8 +22,8 @@ public class RandomPatrol : MonoBehaviour
     [SerializeField] float speedIncreasement;
     const float restartTimer = 0;
     [SerializeField] float timeBeforeIncreasement;
-    
-    [SerializeField] GameObject panel;
+
+    GameManager gameManager;
 
     void Start()
     {
@@ -38,6 +38,8 @@ public class RandomPatrol : MonoBehaviour
         {
             FindObjectOfType<Cooldown>().addFish();
         }
+
+        gameManager = FindObjectOfType<GameManager>();
     }
     
     void Update()
@@ -75,15 +77,6 @@ public class RandomPatrol : MonoBehaviour
         return new Vector2(randomX, randomY);
     }
 
-    private void OnTriggerEnter2D(Collider2D other)
-    {
-        if (other.CompareTag("Player"))
-        {
-            Time.timeScale = 0;
-            panel.SetActive(true);
-        }
-    }
-    
     void IncreaseFishSpeed()
     {
         timer += oneSecond * Time.deltaTime;
@@ -101,6 +94,14 @@ public class RandomPatrol : MonoBehaviour
 
             Vector3 vec = (collision.transform.position - transform.position);
             targetPosition = transform.position - vec;
+        }
+    }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.CompareTag("Player"))
+        {
+            gameManager.DeathFish();
         }
     }
 }

@@ -5936,6 +5936,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   panelMenuPause: {fileID: 623966916}
+  panel: {fileID: 1432714715}
 --- !u!4 &1837934137
 Transform:
   m_ObjectHideFlags: 0
