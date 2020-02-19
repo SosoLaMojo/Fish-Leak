@@ -1,7 +1,7 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!61 &2327258294547130490
-BoxCollider2D:
+--- !u!60 &194619248
+PolygonCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -10,10 +10,10 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.032099843, y: -0.04126072}
+  m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -23,9 +23,22 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.8856294, y: 0.48229313}
-  m_EdgeRadius: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.31266308, y: 0.3230486}
+      - {x: 0.060355186, y: 0.29139233}
+      - {x: -0.10070276, y: 0.16684675}
+      - {x: -0.20977926, y: 0.06342149}
+      - {x: -0.36088562, y: 0.16801643}
+      - {x: -0.58055687, y: -0.006937027}
+      - {x: -0.43149304, y: -0.19286108}
+      - {x: -0.23316407, y: -0.12334156}
+      - {x: -0.004354, y: -0.31787324}
+      - {x: 0.13731623, y: -0.3340757}
+      - {x: 0.39686012, y: -0.17518973}
+      - {x: 0.5740752, y: -0.07083535}
+      - {x: 0.58379745, y: 0.015746355}
+      - {x: 0.3643546, y: 0.14556909}
 --- !u!70 &4452882044039795426
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -36,7 +49,7 @@ CapsuleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0.041271567, y: -0.03209173}
@@ -152,15 +165,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 665425778197557959, guid: 65eef4a5e3089124c9648c76906d13c5,
         type: 3}
-<<<<<<< HEAD
-      propertyPath: m_TagString
-      value: Fish
-      objectReference: {fileID: 0}
-    - target: {fileID: 665425778197557959, guid: 65eef4a5e3089124c9648c76906d13c5,
-        type: 3}
-      propertyPath: m_Layer
-      value: 10
-=======
       propertyPath: m_Layer
       value: 10
       objectReference: {fileID: 0}
@@ -168,7 +172,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_TagString
       value: Fish
->>>>>>> master
       objectReference: {fileID: 0}
     - target: {fileID: 665425778197557963, guid: 65eef4a5e3089124c9648c76906d13c5,
         type: 3}
