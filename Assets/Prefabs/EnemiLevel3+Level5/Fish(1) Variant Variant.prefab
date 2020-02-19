@@ -10,7 +10,12 @@ PrefabInstance:
     - target: {fileID: 2425402478525520600, guid: f12bdcac6249fe741947ab6d468704e8,
         type: 3}
       propertyPath: m_Name
-      value: Fish(1) Variant
+      value: Fish(1) Variant Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 2425402478525520600, guid: f12bdcac6249fe741947ab6d468704e8,
+        type: 3}
+      propertyPath: m_TagString
+      value: Fish
       objectReference: {fileID: 0}
     - target: {fileID: 2425402478525520601, guid: f12bdcac6249fe741947ab6d468704e8,
         type: 3}
