@@ -39,6 +39,22 @@ PolygonCollider2D:
       - {x: 0.5740752, y: -0.07083535}
       - {x: 0.58379745, y: 0.015746355}
       - {x: 0.3643546, y: 0.14556909}
+--- !u!70 &4452882044039795426
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7209520687425289545}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.041271567, y: -0.03209173}
+  m_Size: {x: 0.83060217, y: 0.39060465}
+  m_Direction: 1
 --- !u!1001 &7868155674952863630
 PrefabInstance:
   m_ObjectHideFlags: 0

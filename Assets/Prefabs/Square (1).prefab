@@ -101,6 +101,9 @@ MonoBehaviour:
   minY: -4.44
   maxY: 4.38
   speed: 1
+  speedIncreasement: 0
+  timeBeforeIncreasement: 0
+  panel: {fileID: 0}
 --- !u!114 &665425778197557961
 MonoBehaviour:
   m_ObjectHideFlags: 0
