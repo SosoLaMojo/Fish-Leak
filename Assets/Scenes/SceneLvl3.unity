@@ -3667,6 +3667,16 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1837934136}
+    - target: {fileID: 1863976938075774296, guid: 494368c72a062ff4db566c1af6f354a8,
+        type: 3}
+      propertyPath: maxScoreLevel1
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 1863976938075774296, guid: 494368c72a062ff4db566c1af6f354a8,
+        type: 3}
+      propertyPath: panelLvlUp
+      value: 
+      objectReference: {fileID: 1863976937561621139}
     - target: {fileID: 1863976938135210210, guid: 494368c72a062ff4db566c1af6f354a8,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -3677,6 +3687,11 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1427580422}
+    - target: {fileID: 1863976938497980989, guid: 494368c72a062ff4db566c1af6f354a8,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
+      value: SceneLvl4
+      objectReference: {fileID: 0}
     - target: {fileID: 1863976938666215292, guid: 494368c72a062ff4db566c1af6f354a8,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -3704,6 +3719,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 494368c72a062ff4db566c1af6f354a8, type: 3}
+--- !u!1 &1863976937561621139 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1863976937869928122, guid: 494368c72a062ff4db566c1af6f354a8,
+    type: 3}
+  m_PrefabInstance: {fileID: 1863976937561621138}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &6894650844478143872
 PrefabInstance:
   m_ObjectHideFlags: 0

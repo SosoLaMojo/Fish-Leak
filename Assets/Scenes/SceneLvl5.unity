@@ -3826,10 +3826,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fish:
-  - {fileID: 2425402478525520600, guid: f12bdcac6249fe741947ab6d468704e8, type: 3}
-  - {fileID: 6825174070852489692, guid: 145141f4c95e2c24d88946f6c022ea81, type: 3}
-  - {fileID: 7209520687425289545, guid: 3c2268661e0dfda4abaffa086fc04753, type: 3}
-  - {fileID: 4572921117338532341, guid: d99151f0c1f59c54995be7ffa6b6c57d, type: 3}
+  - {fileID: 5043496522090995190, guid: 12908e6223589cd42b10000adc21be6d, type: 3}
+  - {fileID: 4858462414797367787, guid: c9f4a7789f190e3419f9a629eccf6300, type: 3}
+  - {fileID: 3906810009088776091, guid: 12850258d232c604c989c508637a682a, type: 3}
+  - {fileID: 3216328275415837445, guid: fa2a8932b073d4c4bbe8070d97211572, type: 3}
+  - {fileID: 2274165507115331699, guid: bba53e1ae2951b04888617257f8c4b51, type: 3}
   pointIncreasePerSecond: 0
   pointIncreasement: 0
   timeBeforeInstantiate: 31
@@ -5172,10 +5173,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fish:
-  - {fileID: 2425402478525520600, guid: f12bdcac6249fe741947ab6d468704e8, type: 3}
-  - {fileID: 6825174070852489692, guid: 145141f4c95e2c24d88946f6c022ea81, type: 3}
-  - {fileID: 7209520687425289545, guid: 3c2268661e0dfda4abaffa086fc04753, type: 3}
-  - {fileID: 4572921117338532341, guid: d99151f0c1f59c54995be7ffa6b6c57d, type: 3}
+  - {fileID: 5043496522090995190, guid: 12908e6223589cd42b10000adc21be6d, type: 3}
+  - {fileID: 4858462414797367787, guid: c9f4a7789f190e3419f9a629eccf6300, type: 3}
+  - {fileID: 3906810009088776091, guid: 12850258d232c604c989c508637a682a, type: 3}
+  - {fileID: 3216328275415837445, guid: fa2a8932b073d4c4bbe8070d97211572, type: 3}
+  - {fileID: 2274165507115331699, guid: bba53e1ae2951b04888617257f8c4b51, type: 3}
   pointIncreasePerSecond: 0
   pointIncreasement: 0
   timeBeforeInstantiate: 19
